@@ -1,0 +1,355 @@
+$colors : (
+    gray: #20272E,
+    black: black,
+    blue1:#69C1ED,
+    blue2: #B5E5F7,
+    white: white
+   
+);
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$tablet: 768px;
+$desktop: 992px;
+$xlarge: 1200px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: #{$xlarge}) {
+        @content;
+    }
+}
+
+body a,h1 {
+    font-family: acier-bat-solid,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ 
+   
+    
+}
+
+body div p,h2,h4 {
+    font-family: ariana-pro,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+body div h3 {
+    font-family: unibody-8-new,sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+body div button {
+    font-family: acier-bat-solid,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ 
+}
+
+
+html {
+    font-family: acier-bat-gris, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+.navigation {
+font-family: acier-bat-gris, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+/*# sourceMappingURL=App.css.map */
+
+
+span {
+    border-bottom: 1px solid color(blue1);
+    padding: .15em 0;
+}
+
+h1 {
+    font-size: 2em;
+    
+    @include desktop {
+        font-size: 2.5em;
+    }
+}
+
+.about-container {
+    margin: 2em;
+    @include tablet {
+        margin: 4em;
+
+    }
+
+    @include desktop {
+        margin: 5em;
+
+    }
+}
+
+.about-1 {
+   margin-bottom: 3em;
+    p {
+        font-size: 1.3em;
+        margin: 2em 0;
+    }
+    .oldwell-light {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .image-container {
+            width: 60%;
+        }
+        img {
+            width: 100%;
+            
+        }
+    }
+}
+
+.about-2 {
+    display: flex;
+    padding: 4rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../../assets/circle.svg);
+    background-repeat: no-repeat;
+
+    @include desktop {
+        background-position: center;
+    }
+
+
+}
+
+.pillar-grid {
+    justify-content: center;
+}
+
+.whoWeAre-1 {
+    text-align: center;
+    h2 {
+        font-size: 2.5em;
+    }
+    @include xlarge {
+        display: none;
+    }
+}
+
+.whoWeAre-2 {
+    display: none;
+    padding: 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    h2 {
+        font-size: 3.3em;
+
+    }
+    @include xlarge {
+        display: block;
+    }
+}
+
+.pillar {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 1.5rem;
+    box-shadow: 1px 1px 20px 5px rgb(235, 235, 235);
+    border-radius: 15px;
+    transition: all .2s ease-in-out; 
+   
+}
+
+.pillar:hover { 
+    transform: scale(1.1); 
+}
+
+.members {
+    margin: 2em;
+    margin-bottom: 4rem;
+    h1 {
+        margin: 2rem 0;
+    }
+
+    
+
+    .members-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .member-card {
+        padding: 1.2em;
+        box-shadow: 1px 1px 20px 5px rgb(235, 235, 235);
+        border-radius: 15px;
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all .2s ease-in-out; 
+        h5 {
+            font-family: ariana-pro, sans-serif;
+
+            font-weight: 600;
+
+            font-style: normal;
+        }
+        h6 {
+            font-family: ariana-pro, sans-serif;
+
+            font-weight: 100;
+
+            font-style: normal;
+        }
+       
+        
+    }
+
+    .member-card:hover {
+        transform: scale(1.08); 
+
+    }
+    .member-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 0;
+        width: 200px;
+        height: 200px;    
+        line-height: 50px;
+        
+        font-size: 12px;
+        font-weight: lighter !important;
+        color: #fff !important;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: #ffffff;
+        border-radius:50%;
+        position: relative;
+        top: -3px;
+        
+        img {
+            display: inline-block;
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            display: block;
+            object-fit: cover;
+            min-height: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+strong {
+    font-weight: 800;
+}
+
+.rush {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../../assets/rush-bg-01.svg');
+    background-size: cover;
+    heighT: 80vh;
+    margin-top: 3rem;
+    padding: 2em;
+
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../../assets/contact-bg-01.svg');
+    background-size: cover;
+    heighT: 80vh;
+    margin-top: 3rem;
+    padding: 2em;
+
+    h1 {
+        margin-bottom: 1em;
+    }
+}
+
+h5 {
+    font-family: ariana-pro, sans-serif;
+
+    font-weight: 600;
+
+    font-style: normal;
+}
+
+.contact-info {
+    display: inline;
+    margin: .8em;
+
+
+}
+
+.contact-info {
+    outline: none;
+
+}
+
+.email {
+    text-decoration: underline;
+}
+
+.fb-group-link {
+    color: color(blue1);
+    font-weight: 800;
+    font-family: ariana-pro,sans-serif;
+    font-style: normal;
+}
+
+.fb-group-link:hover {
+    color: color(blue2);
+  
+}
+
+.rush-sub {
+    color: color(blue1);
+    font-weight: 400;
+    font-family: ariana-pro,sans-serif;
+    font-style: normal;
+    font-size: 1.5em
+}

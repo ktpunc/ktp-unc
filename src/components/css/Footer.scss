@@ -1,0 +1,60 @@
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$tablet: 768px;
+$desktop: 1050px;
+$xlarge: 1500px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: #{$xlarge}) {
+        @content;
+    }
+}
+
+
+footer img {
+    width: 2em;
+   
+  
+}
+
+footer .nav-link {
+    margin: 0 .5em 1em .5em;
+    @include tablet {
+        margin: 0em 1.5em 1em 1.5em;
+
+    }
+   
+  
+}
+
+footer .nav {
+   background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}
