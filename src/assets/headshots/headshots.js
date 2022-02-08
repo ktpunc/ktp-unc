@@ -43,7 +43,7 @@
         name: "Savitra Kulkarni",
         role: "Co-Director of Rush",
         photo: require("./SavitraKulkarni.jpg"),
-        major: "",
+        major: "Statistics",
         class: "2023",
         hometown: "Charlotte, NC"
     },
@@ -59,7 +59,7 @@
         name: "John Poltorak",
         role: "Director of Pledging",
         photo: require("./JohnPoltorak.jpg"),
-        major: "Computer Science",
+        major: "Computer Science, Economics",
         class: "2023",
         hometown: "Apex, NC"
     },
@@ -75,7 +75,7 @@
         name: "Olivia Wen",
         role: "Co-Director of Tech Enrichment",
         photo: require("./OliviaWen.jpg"),
-        major: "Computer Science and Biology",
+        major: "Computer Science, Biology",
         class: "2024",
         hometown: "Weston, CT"
     },
@@ -99,7 +99,7 @@
         name: "Cole Hoffman",
         role: "Director of Social Engagement",
         photo: require("./ColeHoffman.jpg"),
-        major: "Computer Science",
+        major: "Business, Computer Science",
         class: "2023",
         hometown: "Cary, NC"
     }
