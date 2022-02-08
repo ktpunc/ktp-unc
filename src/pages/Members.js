@@ -12,7 +12,9 @@ export default function Members() {
         let role = obj.role;
         let major = obj.major;
         let year = obj.class;
-        if (role == "President" || role == "Vice President") {
+        let hometown = obj.hometown;
+        
+        if (role == "President" || role == "Senior Vice President") {
             divs.push(<div className="member-card col-lg-5 col-md-12">
             <h5 className="role"><strong>{role}</strong></h5>
             <div className="member-image"><img src={image} alt={name}/></div>
