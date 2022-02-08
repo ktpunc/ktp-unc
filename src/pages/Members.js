@@ -13,7 +13,7 @@ export default function Members() {
         let major = obj.major;
         let year = obj.class;
         let hometown = obj.hometown;
-        
+
         if (role == "President" || role == "Senior Vice President") {
             divs.push(<div className="member-card col-lg-5 col-md-12">
             <h5 className="role"><strong>{role}</strong></h5>
@@ -21,7 +21,7 @@ export default function Members() {
             <h5>{name}</h5>
             <h6>{major}</h6>
             <h6>{year}</h6>
-            <h7>{hometown}</h7>
+            <h6>{hometown}</h6>
             </div>);
         } else {
             divs.push(<div className="member-card col-lg-3 col-md-12">
@@ -30,7 +30,7 @@ export default function Members() {
             <h5>{name}</h5>
             <h6>{major}</h6>
             <h6>{year}</h6>
-            <h7>{hometown}</h7>
+            <h6>{hometown}</h6>
             </div>);
         }
        
