@@ -19,6 +19,7 @@ export default function Members() {
             <h5>{name}</h5>
             <h6>{major}</h6>
             <h6>{year}</h6>
+            <h7>{hometown}</h7>
             </div>);
         } else {
             divs.push(<div className="member-card col-lg-3 col-md-12">
@@ -27,6 +28,7 @@ export default function Members() {
             <h5>{name}</h5>
             <h6>{major}</h6>
             <h6>{year}</h6>
+            <h7>{hometown}</h7>
             </div>);
         }
        
