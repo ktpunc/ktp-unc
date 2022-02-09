@@ -51,7 +51,7 @@
         name: "Josh Redman",
         role: "Director of Membership",
         photo: require("./JoshRedman.jpg"),
-        major: "Computer Science, Statistics",
+        major: "Economics, Statistics",
         class: "2023",
         hometown: "Cary, NC"
     },
