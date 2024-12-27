@@ -11,7 +11,7 @@ export default function Rush() {
                 <h1>R<span>us</span>h</h1>
                 <h2 class="rush-sub">Interested in rushing KTP?</h2>
                 <br/>
-                <h2>Stay up to date with us for more information about Fall 2022 Rush!</h2>
+                <h2>Stay up to date with us for more information about Spring 2024 Recruitment!</h2>
             </div>
             <Footer />            
         </div>
